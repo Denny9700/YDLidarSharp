@@ -198,8 +198,8 @@ char* GetSerialPort(void* instance)
 void SetSerialPort(void* instance, char* value)
 {
   CYdLidar* lidar_laser = (CYdLidar*)instance;
-  std::string pippo = std::string(value);
-  lidar_laser->setSerialPort(pippo);
+  std::string port = std::string(value);
+  lidar_laser->setSerialPort(port);
 }
 
 float GetOffsetTime(void* instance)
